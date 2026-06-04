@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Optimization -->
+    <title>GA Design | Portfólio Profissional de Designer Gráfico - Gabriel Anderson</title>
+    <meta name="description"
+        content="Portfólio de Gabriel Anderson (GA Design). Designer gráfico profissional especializado em logotipos, branding de identidade visual, social media e artes premium.">
+    <meta name="keywords"
+        content="designer grafico, identidade visual, logotipos, logos, social media, artes para instagram, flyers, cardapios, youtube thumbnails, gabriel anderson, ga design">
+    <meta name="author" content="Gabriel Anderson">
+
+    <!-- Open Graph / Social Sharing Meta -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="GA Design | Gabriel Anderson - Designer Gráfico">
+    <meta property="og:description"
+        content="Transformando ideias em identidades visuais memoráveis e estratégicas de alto impacto.">
+    <meta property="og:image" content="assets/portfolio_branding_lumina.jpg">
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GA Design | Gabriel Anderson">
+    <meta name="twitter:description"
+        content="Designer gráfico especializado em logos, branding e criativos de redes sociais.">
+    <meta name="twitter:image" content="assets/portfolio_branding_lumina.jpg">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- PRELOADER SCREEN -->
+    <div id="preloader" role="dialog" aria-modal="true" aria-label="Carregando Portfólio">
+        <div class="preloader-logo" id="preloaderLogo">GA DESIGN</div>
+        <div class="preloader-bar-bg">
+            <div class="preloader-bar" id="preloader-bar"></div>
+        </div>
+        <div class="preloader-percent" id="preloader-percent">0%</div>
+    </div>
+
+    <!-- BACKGROUND GLOW ORBS -->
+    <div class="glow-orb glow-orb-1" aria-hidden="true"></div>
+    <div class="glow-orb glow-orb-2" aria-hidden="true"></div>
+    <div class="glow-orb glow-orb-3" aria-hidden="true"></div>
+
+    <!-- HEADER / NAVBAR -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo" id="logoLink">
+                GA <span>DESIGN</span>
+            </a>
+
+            <!-- Navigation links -->
+            <nav id="navbar" aria-label="Navegação Principal">
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#hero" class="nav-link active">Início</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre Mim</a></li>
+                    <li><a href="#servicos" class="nav-link">Serviços</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfólio</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Toggle Menu Hamburger -->
+            <button class="hamburger" id="hamburger" aria-expanded="false" aria-label="Abrir Menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </button>
+        </div>
+    </header>
+
+    <!-- MAIN APP CONTENT -->
+    <main>
+
+        <!-- HERO SECTION -->
+        <section id="hero" class="section">
+            <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+            <div class="hero-grid-overlay" aria-hidden="true"></div>
+
+            <div class="container">
+                <div class="hero-content">
+                    <div class="badge reveal">Gabriel Anderson • Designer Gráfico</div>
+
+                    <div class="hero-title-wrapper reveal" style="transition-delay: 0.1s;">
+                        <h1 class="hero-logo-name">GA DESIGN</h1>
+                    </div>
+
+                    <h2 class="hero-headline reveal" style="transition-delay: 0.2s;">
+                        Transformando Ideias em <span>ARTE!</span>
+                    </h2>
+
+                    <p class="hero-desc reveal" style="transition-delay: 0.3s;">
+                        Criação de logos, identidade visual, social media e materiais gráficos para negócios de todos os
+                        tamanhos que querem transmitir profissionalismo e conquistar mais clientes.
+                    </p>
+
+                    <div class="hero-buttons reveal" style="transition-delay: 0.4s;">
+                        <a href="#portfolio" class="glow-btn glow-btn-primary" id="btnHeroPortfolio">
+                            Ver Portfólio
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                            </svg>
+                        </a>
+                        <a href="https://wa.me/5562995659330?text=Olá%20Gabriel!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços%20de%20design."
+                            target="_blank" rel="noopener noreferrer" class="glow-btn glow-btn-secondary"
+                            id="btnHeroWhats">
+                            <svg width="18" height="18" viewBox="0 0 16 16" fill="currentColor">
+                                <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                            </svg>
+                            Falar no WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FLOATING GEOMETRIC SHAPES (CSS 3D ANIMATION EFFECTS) -->
+            <div class="hero-shapes" aria-hidden="true">
+                <div class="floating-mesh"></div>
+                <div class="floating-glow-core"></div>
+                <div class="floating-torus"></div>
+                <div class="floating-triangle"></div>
+            </div>
+        </section>
+
+        <!-- SOBRE MIM -->
+        <section id="sobre" class="section">
+            <div class="container">
+                <div class="sobre-grid">
+
+                    <!-- Professional Photo inside Double Neon Rotating Frame -->
+                    <div class="sobre-image-container reveal">
+                        <div class="outer-neon-ring"></div>
+                        <div class="neon-photo-frame">
+                            <div class="neon-photo-inner">
+                                <img src="assets/gabriel_nova_foto.jpg" alt="Gabriel Anderson - Designer Gráfico"
+                                    id="avatarImage">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bio & Details -->
+                    <div class="sobre-info reveal" style="transition-delay: 0.2s;">
+                        <span class="badge">Gabriel Anderson</span>
+                        <h2 class="section-title">Sobre Mim</h2>
+
+                        <div class="sobre-text">
+                            <p>
+                                Designer gráfico especializado em identidade visual, logos e materiais para redes
+                                sociais.
+                            </p>
+                            <p>
+                                Gosto de transformar ideias em projetos visuais que ajudam marcas e negócios a se
+                                destacarem de forma profissional. Cada trabalho é desenvolvido com dedicação,
+                                criatividade e atenção aos detalhes, buscando criar algo único para cada cliente.
+                            </p>
+                        </div>
+
+                        <!-- Core attributes grid -->
+                        <div class="sobre-attributes">
+                            <div class="attribute-item">
+                                <span class="attribute-icon">✓</span>
+                                <span class="attribute-label">Atendimento Personalizado</span>
+                            </div>
+                            <div class="attribute-item">
+                                <span class="attribute-icon">✓</span>
+                                <span class="attribute-label">Criatividade em Cada Projeto</span>
+                            </div>
+                            <div class="attribute-item">
+                                <span class="attribute-icon">✓</span>
+                                <span class="attribute-label">Arquivos Organizados</span>
+                            </div>
+                            <div class="attribute-item">
+                                <span class="attribute-icon">✓</span>
+                                <span class="attribute-label">Compromisso com a Qualidade</span>
+                            </div>
+                            <div class="attribute-item">
+                                <span class="attribute-icon">✓</span>
+                                <span class="attribute-label">Suporte Pós-Entrega</span>
+                            </div>
+                            <div class="attribute-item">
+                                <span class="attribute-icon">✓</span>
+                                <span class="attribute-label">Compromisso com Prazos</span>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/5562995659330?text=Olá%20Gabriel!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20serviços%20de%20design."
+                            target="_blank" rel="noopener noreferrer" class="glow-btn glow-btn-primary"
+                            id="btnSobreContato">
+                            Fazer Parceria
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVIÇOS -->
+        <section id="servicos" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="badge">Especialidades</span>
+                    <h2 class="section-title">O Que Posso Fazer Pelo Seu Negócio</h2>
+                    <p class="section-subtitle">Soluções visuais de ponta a ponta projetadas para destacar sua marca no
+                        mercado físico e digital.</p>
+                </div>
+
+                <!-- Services Grid (staggered loading cards rendered dynamically by JS) -->
+                <div class="servicos-grid" id="servicosGrid"></div>
+
+
+            </div>
+        </section>
+
+        <!-- PORTFÓLIO -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="badge">Projetos Finalizados</span>
+                    <h2 class="section-title">Meus Trabalhos</h2>
+                    <p class="section-subtitle">Uma seleção dos meus trabalhos de identidade visual e criação.</p>
+                </div>
+
+                <!-- Category Tabs Filter list -->
+                <ul class="portfolio-filter reveal" style="transition-delay: 0.1s;">
+                    <li><button class="filter-btn active" data-filter="all">Todos</button></li>
+                    <li><button class="filter-btn" data-filter="logos">Logos</button></li>
+                    <li><button class="filter-btn" data-filter="flyers">Flyers</button></li>
+                    <li><button class="filter-btn" data-filter="cardapios">Cardápios</button></li>
+                    <li><button class="filter-btn" data-filter="youtube">YouTube</button></li>
+                    <li><button class="filter-btn" data-filter="outros">Outros Projetos</button></li>
+                </ul>
+
+                <!-- Portfolio Grid (Items rendered by JS) -->
+                <div class="portfolio-grid" id="portfolioGrid"></div>
+
+                <!-- Empty Search Box -->
+                <div class="portfolio-empty" id="portfolioEmpty">
+                    <p>Nenhuma arte encontrada nesta categoria no momento. Novos projetos serão adicionados em breve!
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- CONTADORES -->
+        <section id="contadores" class="section">
+            <div class="container contadores-container">
+                <div class="contador-item">
+                    <div class="contador-num" id="count-projetos">0</div>
+                    <div class="contador-label">Projetos Realizados</div>
+                </div>
+                <div class="contador-item">
+                    <div class="contador-num" id="count-clientes">0</div>
+                    <div class="contador-label">Clientes Atendidos</div>
+                </div>
+                <div class="contador-item">
+                    <div class="contador-num" id="count-experiencia">0</div>
+                    <div class="contador-label">Anos de Experiência</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section id="contato" class="section">
+            <div class="container">
+                <div class="section-header reveal">
+                    <span class="badge">Orçamento</span>
+                    <h2 class="section-title">Vamos Conversar Sobre Seu Projeto?</h2>
+                    <p class="section-subtitle">Estou pronto para ajudar a transformar sua ideia em um projeto visual
+                        profissional. Entre em contato e vamos conversar.</p>
+                </div>
+
+                <div class="contato-layout">
+
+                    <!-- Direct channels -->
+                    <div class="contato-detalhes reveal">
+                        <p class="contato-info-p">
+                            Atendo clientes de todo o Brasil, desenvolvendo projetos de design gráfico para empresas,
+                            empreendedores e marcas que desejam se destacar.
+                        </p>
+
+                        <div class="canais-contato">
+                            <!-- WhatsApp -->
+                            <a href="https://wa.me/5562995659330?text=Olá%20Gabriel!%20Gostaria%20de%20um%20orçamento."
+                                target="_blank" rel="noopener noreferrer" class="canal-link" id="linkWhatsDirect">
+                                <div class="canal-icon">
+                                    <svg viewBox="0 0 16 16">
+                                        <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                                    </svg>
+                                </div>
+                                <div class="canal-meta">
+                                    <h4>WhatsApp</h4>
+                                    <p>(62) 9 9565-9330</p>
+                                </div>
+                            </a>
+
+                            <!-- E-mail -->
+                            <a href="mailto:contato@gadesign.com" class="canal-link" id="linkEmailDirect">
+                                <div class="canal-icon">
+                                    <svg viewBox="0 0 24 24">
+                                        <path
+                                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                    </svg>
+                                </div>
+                                <div class="canal-meta">
+                                    <h4>E-mail</h4>
+                                    <p>andersongabriel1010@gmail.com</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Call to action card -->
+                    <div class="contato-quadro reveal" style="transition-delay: 0.2s;">
+                        <h3 class="quadro-title">Transformando Ideias em Arte.</h3>
+                        <p class="quadro-desc">
+                            Cada grande projeto começa com uma conversa. Vamos transformar sua ideia em realidade.
+                        </p>
+                        <a href="https://wa.me/5562995659330?text=Ol%C3%A1%20Gabriel!%20Gostaria%20de%20saber%20mais%20sobre%20seus%20servi%C3%A7os%20de%20design."
+                            target="_blank" rel="noopener noreferrer"
+                            class="glow-btn glow-btn-primary quadro-action-btn" id="btnBigContato">
+                            Falar no WhatsApp
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 4l-1.41 1.41L16.17 11H4v2h12.17l-5.58 5.59L12 20l8-8z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER / RODAPÉ -->
+    <footer class="footer" id="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <div class="footer-logo">GA <span>DESIGN</span></div>
+                    <p class="footer-slogan">Gabriel Anderson • Designer Gráfico</p>
+                    <p class="footer-tagline">Logos, identidade visual, social media e websites criados para transmitir profissionalismo e valorizar a presença da sua marca.</p>
+                </div>
+
+                <!-- Quick links -->
+                <div class="footer-links-wrapper">
+                    <div class="footer-links-col">
+                        <h4>Links Rápidos</h4>
+                        <ul class="footer-links">
+                            <li><a href="#hero">Início</a></li>
+                            <li><a href="#sobre">Sobre Mim</a></li>
+                            <li><a href="#servicos">Serviços</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col">
+                        <h4>Foco Técnico</h4>
+                        <ul class="footer-links">
+                            <li><a href="#portfolio">Portfólio</a></li>
+                            <li><a href="#contato">Contato</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="footer-copy">&copy; 2026 GA Design. Todos os direitos reservados.</p>
+                <p class="footer-signature">Desenvolvido Por Gabriel Anderson. <span>💜</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="portfolioModal" role="dialog" aria-modal="true">
+        <div class="modal-content-wrapper">
+
+            <!-- Close trigger -->
+            <button class="modal-close-btn" id="modalClose" aria-label="Fechar Modal">✕</button>
+
+            <!-- Image Area with gallery support -->
+            <div class="modal-img-area">
+                <img src="" alt="Projeto ampliado" id="modal-img">
+
+                <!-- Gallery navigation -->
+                <button class="gallery-nav gallery-prev" id="galleryPrev" aria-label="Anterior">&#8249;</button>
+                <button class="gallery-nav gallery-next" id="galleryNext" aria-label="Próximo">&#8250;</button>
+                <div class="gallery-counter" id="galleryCounter"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+
+</html>
